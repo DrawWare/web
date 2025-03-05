@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>DrawWare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+	  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-lg-none" href="#">
+        <img src="images/DW-logo.png" alt="Logo" width="120">
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas para móviles -->
+      <div class="offcanvas offcanvas-end d-lg-none" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">DRAW WARE</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- Soluciones -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="solucionesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Soluciones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="solucionesDropdown">
+                <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
+                <li><a class="dropdown-item" href="#">Desarrollo de Apps</a></li>
+                <li><a class="dropdown-item" href="#">Diseño y Desarrollo Web</a></li>
+                <li><a class="dropdown-item" href="#">Tiendas Online</a></li>
+                <li><a class="dropdown-item" href="#">Contenido y Manejo de Redes</a></li>
+                <li><a class="dropdown-item" href="#">Branding y Diseño de Marca</a></li>
+                <li><a class="dropdown-item" href="#">Posicionamiento en Google</a></li>
+              </ul>
+            </li>
+
+            <!-- Nosotros -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="nosotrosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nosotros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="nosotrosDropdown">
+                <li><a class="dropdown-item" href="#">Visión</a></li>
+                <li><a class="dropdown-item" href="#">Equipo</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                <li><a class="dropdown-item" href="#">Partners</a></li>
+              </ul>
+            </li>
+
+            <!-- Contacto -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="contactoDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contacto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="contactoDropdown">
+                <li><a class="dropdown-item" href="#">Consultanos</a></li>
+                <li><a class="dropdown-item" href="#">Trabajá con Nosotros</a></li>
+                <li><a class="dropdown-item" href="#">Solicitá tu Combo</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menú para escritorio -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+		  
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="solucionesDropdownDesktop"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Soluciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="solucionesDropdownDesktop">
+              <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
+              <li><a class="dropdown-item" href="#">Desarrollo de Apps</a></li>
+              <li><a class="dropdown-item" href="#">Diseño y Desarrollo Web</a></li>
+              <li><a class="dropdown-item" href="#">Tiendas Online</a></li>
+              <li><a class="dropdown-item" href="#">Contenido y Manejo de Redes</a></li>
+              <li><a class="dropdown-item" href="#">Branding y Diseño de Marca</a></li>
+              <li><a class="dropdown-item" href="#">Posicionamiento en Google</a></li>
+            </ul>
+          </li>
+		  
+		           <!-- Nosotros -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="nosotrosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nosotros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="nosotrosDropdown">
+                <li><a class="dropdown-item" href="#">Visión</a></li>
+                <li><a class="dropdown-item" href="#">Equipo</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                <li><a class="dropdown-item" href="#">Partners</a></li>
+              </ul>
+            </li>
+
+            <!-- Contacto -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="contactoDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contacto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="contactoDropdown">
+                <li><a class="dropdown-item" href="#">Consultanos</a></li>
+                <li><a class="dropdown-item" href="#">Trabajá con Nosotros</a></li>
+                <li><a class="dropdown-item" href="#">Solicitá tu Combo</a></li>
+              </ul>
+            </li>
+        </ul>
+		<h1 class="empresa">DRAW WARE</h1>
+      </div>
+    </div>
+  </nav>
+	
+  </header>
+  
+	<section class="presentation">
+		<div class="presentation-content">
+			<h1 class="title">Dibujamos tu mejor futuro <span>And let's DRAW your growth</span></h1>
+			<p class="subtitle">Creamos soluciones de software personalizadas para ayudar a tu empresa a crecer y ser más eficiente.</p>
+		</div>
+	</section>
+
+
+    <!-- <section> -->
+        <!-- <h1>Servicios - Combos</h1> -->
+        <!-- <p>Selecciona el combo que mejor se adapte a tus necesidades</p> -->
+    <!-- </section> -->
+
+    <!-- <div class="container"> -->
+        <!-- <div class="combos"> -->
+            Combo Standard
+            <!-- <div class="combo"> -->
+                <!-- <h3>Combo Standard</h3> -->
+                <!-- <ul> -->
+                    <!-- <li>Diseño de imagen corporativa</li> -->
+                    <!-- <li>1 banner inicial</li> -->
+                    <!-- <li>Configuración básica de redes sociales</li> -->
+                    <!-- <li>Asesoría inicial personalizada</li> -->
+                <!-- </ul> -->
+                <!-- <div class="price">$100 USD</div> -->
+                <!-- <button>Seleccionar</button> -->
+            <!-- </div> -->
+
+            Combo Draw
+            <!-- <div class="combo"> -->
+                <!-- <h3>Combo Draw</h3> -->
+                <!-- <ul> -->
+                    <!-- <li>Diseño completo de tienda online</li> -->
+                    <!-- <li>Carga de hasta 50 productos</li> -->
+                    <!-- <li>Configuración de pagos y envíos</li> -->
+                    <!-- <li>Revisión y ajustes antes del lanzamiento</li> -->
+                <!-- </ul> -->
+                <!-- <div class="price">$250 USD</div> -->
+                <!-- <button>Seleccionar</button> -->
+            <!-- </div> -->
+
+            Combo Premium
+            <!-- <div class="combo"> -->
+                <!-- <h3>Combo Premium</h3> -->
+                <!-- <ul> -->
+                    <!-- <li>Diseño personalizado de página web</li> -->
+                    <!-- <li>Gestión avanzada de redes sociales</li> -->
+                    <!-- <li>Campañas de marketing digital</li> -->
+                    <!-- <li>Soporte y actualizaciones mensuales</li> -->
+                <!-- </ul> -->
+                <!-- <div class="price">$500 USD</div> -->
+                <!-- <button>Seleccionar</button> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+	
+	<footer>
+	  <div class="footer-container">
+		<div class="footer-sections">
+		  <div class="footer-column">
+			<h4>Soluciones</h4>
+			<ul>
+			  <li><a href="#">Marketing Digital</a></li>
+			  <li><a href="#">Desarrollo de Apps</a></li>
+			  <li><a href="#">Diseño y Desarrollo Web</a></li>
+			  <li><a href="#">Tiendas Online</a></li>
+			  <li><a href="#">Contenido y manejo de redes</a></li>
+			  <li><a href="#">Branding y diseño de marca</a></li>
+			  <li><a href="#">Posicionamiento en Google</a></li>
+			</ul>
+		  </div>
+		  <div class="footer-column">
+			<h4>Nosotros</h4>
+			<ul>
+			  <li><a href="#">Visión</a></li>
+			  <li><a href="#">Equipo</a></li>
+			  <li><a href="#">Portfolio</a></li>
+			  <li><a href="#">Partners</a></li>
+			</ul>
+		  </div>
+		  
+		  
+		</div>
+		<div class="footer-help">
+		
+			<h4>Contacto</h4>
+			<ul>
+			  <li><a href="#">Consultanos</a></li>
+			  <li><a href="#">Trabaja con Nosotros</a></li>
+			  <li><a href="#">Solicita tu Combo</a></li>
+			</ul>
+			
+			<h4>Ayuda</h4>
+			<ul>
+			  <li><a href="#">Términos y Políticas de Privacidad</a></li>
+			  <li><a href="mailto:info@drawware.com">Correo: contacto@tuempresa.com</a></li>
+			</ul>
+		  <div class="contact-info">
+			<p>  Teléfonos: +54 9 351 12-5678 </p>
+		  </div>
+		  
+		  
+		</div>
+
+
+		<div class="footer-social">
+		  <h4>Síguenos</h4>
+		  <div class="social-icons">
+			<a href="ico/facebook.png" class="social-icon" src="ico/facebook.png"><i class="fab fa-facebook-f"></i>
+			    <img src="ico/facebook.png" alt="Logo facebook">
+			</a>
+			<a href="ico/twitter.png" class="social-icon"><i class="fab fa-twitter"></i>
+			    <img src="ico/twitter.png" alt="Logo twitter">
+			</a>
+			<a href="ico/instagram.png" class="social-icon"><i class="fab fa-instagram"></i>
+			    <img src="ico/instagram (1).png" alt="Logo instagram">
+			</a>
+			<a href="ico/linkedin.png" class="social-icon"><i class="fab fa-linkedin-in"></i>
+			     <img src="ico/linkedin (1).png" alt="Logo linkedin">
+			</a>
+			<a href="ico/whatsapp.png" class="social-icon"><i class="fab fa-whatsapp"></i>
+			     <img src="ico/whatsapp.png" alt="Logo whatsapp">
+			</a>
+		  </div>
+		  		<img src="images/DrawWare.png">
+		</div>
+
+	  </div>
+	  <div class="footer-bottom">
+		<p>&copy; 2025 DrawWare. Todos los derechos reservados.</p>
+	  </div>
+	</footer>	
+	
+	<script src="script.js"></script>
+</body>
+</html>

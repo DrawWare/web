@@ -1,0 +1,12 @@
+Tonos Rosas:
+#9000FF (Rosa púrpura brillante)
+#B300E6 (Rosa eléctrico intenso)
+#C800FF (Magenta neón)
+Tonos Azules:
+#4500FF (Azul eléctrico intenso)
+#3700E6 (Azul púrpura futurista)
+#3100FF (Azul neón más saturado)
+Tonos Violetas:
+#7A00FF (Violeta neón brillante)
+#6900E6 (Violeta púrpura eléctrico)
+#7600FF (Morado intenso futurista)
